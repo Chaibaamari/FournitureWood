@@ -1,11 +1,9 @@
-
 function App() {
-
   return (
-    <>
-      <p className="bg-amber-500 text-5xl">hello chaiba</p>
-    </>
-  )
+    <main className="">
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    </main>
+  );
 }
 
-export default App
+export default App;
