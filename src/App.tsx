@@ -4,8 +4,8 @@ import Navbar from "./components/navbar";
 function App() {
   return (
     <main className="">
-      <Hero/>
       <Navbar /> 
+      <Hero/>
     </main>
   );
 }
