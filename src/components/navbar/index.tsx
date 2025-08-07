@@ -22,6 +22,17 @@ const Navbar = () => {
           </div>
           <ShoppingBag className="text-black size-5" strokeWidth={1} />
         </Button>
+        <Button
+          size={"icon"}
+          className="rounded-full overflow-hidden"
+          variant={"secondary"}
+        >
+          <img
+            src="https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </Button>
       </div>
     </Gutter>
   );
