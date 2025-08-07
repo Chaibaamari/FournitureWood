@@ -1,4 +1,10 @@
+import { Gutter } from "../Gutter";
+
 const Navbar = () => {
-  return <div className=""></div>;
+  return (
+    <Gutter className="flex items-center justify-between">
+      <div>dsadsa</div>
+    </Gutter>
+  );
 };
 export default Navbar;
