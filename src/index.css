@@ -1,5 +1,3 @@
-
-
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -130,59 +128,65 @@
   }
 }
 
-@layer components{
-  #hero{
-    @apply flex flex-col md:flex-row gap-4 mt-10 mb-10 h-auto md:h-[700px] font-light;
-  
-    .left-content{
-      @apply bg-stone-100 rounded-[19px] flex-1 flex flex-col ;
-      
-      h1{
-        @apply  text-2xl md:text-5xl p-5 text-center mt-16 mb-8 font-normal;
-      }
-      .btn-filter-active{
-      @apply rounded-4xl cursor-pointer border-[1.5px] border-black p-2 px-4 font-medium;
-    }
-    .btn-filter-non-active{
-      @apply rounded-4xl cursor-pointer border-[1.5px] border-stone-400 p-2 px-4 font-medium text-stone-400;
-    }
-    .product-showcase{
-      @apply bg-white p-6 mx-5 rounded-3xl flex-1 mb-5 my-0;
+@layer components {
+  #hero {
+    @apply flex flex-col md:flex-row gap-4 mt-10 mb-10 h-[calc(100vh-10vh)] font-light;
 
-      .product-showcase-item{
-        @apply flex flex-col md:flex-row justify-between items-start gap-10 md:gap-8 ;
+    .left-content {
+      @apply bg-stone-100 rounded-[19px] flex-1 flex flex-col;
+
+      h1 {
+        @apply text-2xl md:text-5xl p-5 text-center my-16 leading-normal font-medium;
       }
 
-      span{
-        @apply text-sm font-medium text-gray-600 tracking-wide  bg-stone-200 p-2 rounded-2xl;
+      .btn-filter-active {
+        @apply rounded-4xl cursor-pointer border-[1.5px] border-black p-2 px-4 font-medium;
       }
-      h2{
-        @apply text-4xl lg:text-2xl text-gray-900 leading-tight mt-6;
+
+      .btn-filter-non-active {
+        @apply rounded-4xl cursor-pointer border-[1.5px] border-stone-400 p-2 px-4 font-medium text-stone-400;
       }
-      p{
-        @apply text-gray-500 text-sm leading-relaxed max-w-md;
+
+      .product-showcase {
+        @apply bg-white p-6 mx-5 rounded-3xl flex-1 mb-5 my-0;
+
+        .product-showcase-item {
+          @apply flex flex-col md:flex-row justify-between items-start gap-10 md:gap-8;
+        }
+
+        span {
+          @apply text-sm font-medium text-gray-600 tracking-wide bg-stone-200 p-2 rounded-2xl;
+        }
+
+        h2 {
+          @apply text-4xl lg:text-2xl text-gray-900 leading-tight mt-6;
+        }
+
+        p {
+          @apply text-gray-500 text-sm leading-relaxed max-w-md;
+        }
       }
-    }
     }
 
-    .right-content{
+    .right-content {
       @apply flex-1 relative;
 
-      img{
-        @apply rounded-[19px] object-cover w-full h-full min-h-[400px] md:min-h-full;
+      img {
+        @apply rounded-[19px] relative object-cover w-full h-full min-h-[400px] md:min-h-full;
       }
-      .description{
-        @apply md:w-[92%] h-[33%] md:h-[28%] backdrop-blur-sm bg-white/15 absolute bottom-10 ml-4 mr-4 md:ml-6 space-y-5 p-5 rounded-[19px] border-2 border-stone-400;
-        
-        h2{
-          @apply text-3xl md:text-4xl  text-white leading-tight;
+
+      /* .description {
+        @apply w-full backdrop-blur-xs bg-white/15 absolute bottom-10 ml-4 mr-4 md:ml-6 space-y-5 p-5 rounded-[19px] border-2 border-stone-400;
+
+        h2 {
+          @apply text-3xl md:text-4xl text-white font-medium leading-tight;
         }
-        p{
-          @apply text-white text-sm leading-relaxed max-w-md;
+
+        p {
+          @apply text-white text-base leading-relaxed max-w-md;
         }
-      }
+      } */
     }
 
   }
 }
-
