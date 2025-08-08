@@ -1,5 +1,5 @@
 import { Heart, ShoppingBag } from "lucide-react";
-import { Gutter } from "../Gutter";
+import { Gutter } from "../ui/Gutter";
 import { Button } from "../ui/button";
 import SlideTabs from "./slidetabs";
 

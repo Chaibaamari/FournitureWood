@@ -130,21 +130,21 @@
 
 @layer components {
   #hero {
-    @apply flex flex-col md:flex-row gap-4 mt-10 mb-10 h-[calc(100vh-10vh)] font-light;
+    @apply flex flex-col md:flex-row gap-4 mt-10 mb-10 2xl:h-[calc(100vh-10vh)] h-[107vh] font-light;
 
     .left-content {
       @apply bg-stone-100 rounded-[19px] flex-1 flex flex-col;
 
       h1 {
-        @apply text-2xl md:text-5xl p-5 text-center my-16 leading-normal font-medium;
+        @apply text-2xl md:text-4xl p-5 text-center my-12 xl:my-16 leading-normal font-medium;
       }
 
       .btn-filter-active {
-        @apply rounded-4xl cursor-pointer border-[1.5px] border-black p-2 px-4 font-medium;
+        @apply rounded-4xl cursor-pointer border-[1.5px]  p-2 px-4 font-medium;
       }
 
       .btn-filter-non-active {
-        @apply rounded-4xl cursor-pointer border-[1.5px] border-stone-400 p-2 px-4 font-medium text-stone-400;
+        @apply rounded-4xl cursor-pointer border-[1.5px]  p-2 px-4 font-medium ;
       }
 
       .product-showcase {
